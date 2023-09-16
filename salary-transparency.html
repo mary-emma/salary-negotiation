@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Salary Transparency Database</title>
+    <link rel="stylesheet" href="/salary-transparency.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body onload="loadRows()">
+    <section class="back">
+      <a href="/index.html"><i class="fas fa-arrow-left fa-2x"></i></a>
+    </section>
+    <div class="wrapper">
+      <div class="content" role="main">
+        <h1 class="title">Salary Transparency Database</h1>
+        <div class="chatbot">
+          <h2>About our Salary Transparency Database</h2>
+          <p>
+            This database holds information shared by industry professionals about their role, gender, organization and salary. Feel free to browse the information here or submit your own using the form below.
+          </p>
+          <table id="salaryInfo">
+          <tr>
+            <td class="tableHeader">Role</td>
+            <td class="tableHeader">Hourly Salary</td>
+            <td class="tableHeader">Gender</td>
+            <td class="tableHeader">Years of Experience</td>
+          </tr>
+          <tr>
+            <td>Software Developer</td>
+            <td>$38</td>
+            <td>Female</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Project Manager</td>
+            <td>$41.50</td>
+            <td>Female</td>
+            <td>7</td>
+          </tr>
+          <tr>
+            <td>Backend Developer</td>
+            <td>$35.89</td>
+            <td>Male</td>
+            <td>5</td>
+          </tr>
+        </table>
+          <h2>
+            Share your info
+          </h2>
+          <table class="formTable">
+            <form>
+                <tr>
+                    <td class="formCells">
+                      <label for="role">Role:</label>
+                    </td>
+                    <td class="formCells">
+                      <input type="string" id="role" name="role">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="formCells">
+                      <label for="salary">Hourly Salary:</label>
+                    </td>
+                    <td class="formCells">
+                      <input type="string" id="salary" name="salary">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="formCells">
+                      <label for="gender">Gender: </label>
+                    </td>
+                    <td class="formCells">
+                      <input type="string" id="gender" name="gender">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="formCells">
+                      <label for="experience">Years of Experience:</label>
+                    </td>
+                    <td class="formCells">
+                      <input type="string" id="experience" name="experience">
+                    </td>
+                </tr>
+              <tr>
+                    <td class="formCells">
+                      <button type="submit" class="submit" onclick="createRow()">Add my info</button>
+                    </td>
+              </tr>
+            </form>
+        </table>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+    </footer>
+    <script src = "script.js"></script>
+  </body>
+</html>
